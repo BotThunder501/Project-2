@@ -60,9 +60,9 @@ h1
 
 .border
 {
-    border-style: solid;
-    border-color: black;
-    height: 400px;
+    /* border-style: solid;
+    border-color: black; */
+    height: 600px;
     width: 15px;
 }
 
@@ -82,23 +82,27 @@ h1
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: padding-box;
-    height: 700px;
-    width: 700px;
-    border-color: black;
-    border-style: solid;
+    height: 600px;
+    width: 600px;
+    /* border-color: black;
+    border-style: solid; */
     flex: none;
 }
 
 #components
 {
-    padding: 40px;
+    height: 250px;
+    /* padding: 40px; */
     border-color: black;
     border-style: solid;
-    margin: 5px 0px;
+    margin: 9px 0px;
 }
 
 .funcomps
 {
+    background-color: white;
+    border-style: dashed;
+    border-color: black;
     text-align: center;
     width: 12%;
     flex: 1;
