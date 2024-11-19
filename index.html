@@ -9,17 +9,42 @@
 <body>
     <!-- Title of page -->
     <h1>Building the PC</h1>
+
     <!-- Game Area -->
-    <div>
-        <!-- Main board area with boxes painting to motherboard parts -->
-        <div><p>main game area</p></div>
-        <!-- all components to drag -->
-        <div><p>components box</p></div>
-        <!-- submit to see if correct or not -->
-        <input type="submit" value="">
-        <!-- refresh or shuffle -->
-        <input type="button" value="">
+    <div class="flex-grid">
+        <div class="row">
+
+            <div class="column border empty">
+                <div class="subbox"></div>
+                <div class="subbox"></div>
+            </div>
+            <!-- Main board area with boxes painting to motherboard parts -->
+            <div id="motherboard" class="column"></div>
+            <div class="column border emtpy">
+                <div class="subbox"></div>
+                <div class="subbox"></div>
+                <div class="subbox"></div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- all components to drag -->
+            <div id="components" class="column comprow">
+                <div id="cpu" class="funcomps">comp1</div>
+                <div id="ram" class="funcomps">comp2</div>
+                <div id="psu" class="funcomps">comp3</div>
+                <div id="storage" class="funcomps">comp4</div>
+                <div id="gpu" class="funcomps">comp5</div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- submit answer -->
+            <input type="submit" value="Submit" class="column two">
+            <!-- <div class="column"></div> -->
+            <!-- refresh or shuffle -->
+            <button class="column two"><i class="fa-solid fa-arrows-rotate"></i></button>        
+        </div>
     </div>
     <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/f95165e036.js" crossorigin="anonymous"></script>
 </body>
 </html>
