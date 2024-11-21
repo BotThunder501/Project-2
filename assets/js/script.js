@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Check if the dropzone is a valid subbox (not a funcomp)
         if (dropzone.classList.contains('subbox')) {
             // Check if the dropzone already has a child
-            if (dropzone.children.length === 0) {
+            if (dropzone.children.length === 2) {
                 dropzone.appendChild(draggableElement);
             } else {
                 // If the dropzone is occupied, return the draggable element to its original position

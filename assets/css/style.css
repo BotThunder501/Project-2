@@ -8,8 +8,6 @@ html,body
 { 
     height:100vh;
     margin: 0px;
-    display: flex;
-    flex-direction: column;
 }
 
 /* centers title text */
@@ -68,11 +66,40 @@ h1
 
 .subbox
 {
-    display: flex;
+    position: relative;
     background-color: white;
     border-style: dashed;
     border-color: black;
+    align-content: center;
     flex: 1;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.check
+{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    margin: 0 auto;
+    padding: 10px;
+    z-index: 2;
+    /* background-color: #bbb; */
+    border-radius: 50%;
+}
+
+#correct
+{
+    display: none;
+    background-color: green;
+    
+}
+
+#incorrect
+{
+    display: none;
+    background-color: red;
 }
 
 
@@ -93,7 +120,6 @@ h1
 #components
 {
     height: 200px;
-    /* padding: 40px; */
     border-color: black;
     border-style: solid;
     margin: 9px 0px;
@@ -105,7 +131,7 @@ h1
     border-style: dashed;
     border-color: black;
     text-align: center;
-    width: 12%;
+    height: 98%;
     flex: 1;
 }
 
