@@ -13,42 +13,41 @@
     <!-- Game Area -->
     <div class="flex-grid">
         <div class="row">
-
             <div class="column border empty">
                 <div id="1" class="subbox">
-                    <div id="correct" class="check"></div>
-                    <div id="incorrect" class="check"></div>
+                    <div id="correct-cpu" class="check" style="display: none; background-color: green;"></div>
+                    <div id="incorrect-cpu" class="check" style="display: none; background-color: red;"></div>
                 </div>
                 <div id="2" class="subbox">
-                    <div id="correct" class="check"></div>
-                    <div id="incorrect" class="check"></div>
+                    <div id="correct-gpu" class="check" style="display: none; background-color: green;"></div>
+                    <div id="incorrect-gpu" class="check" style="display: none; background-color: red;"></div>
                 </div>
             </div>
             <!-- Main board area with boxes painting to motherboard parts -->
             <div id="motherboard" class="column"></div>
-            <div class="column border emtpy">
+            <div class="column border empty">
                 <div id="3" class="subbox">
-                    <div id="correct" class="check"></div>
-                    <div id="incorrect" class="check"></div>
+                    <div id="correct-ram" class="check" style="display: none; background-color: green;"></div>
+                    <div id="incorrect-ram" class="check" style="display: none; background-color: red;"></div>
                 </div>
                 <div id="4" class="subbox">
-                    <div id="correct" class="check"></div>
-                    <div id="incorrect" class="check"></div>
+                    <div id="correct-psu" class="check" style="display: none; background-color: green;"></div>
+                    <div id="incorrect-psu" class="check" style="display: none; background-color: red;"></div>
                 </div>
                 <div id="5" class="subbox">
-                    <div id="correct" class="check"></div>
-                    <div id="incorrect" class="check"></div>
+                    <div id="correct-storage" class="check" style="display: none; background-color: green;"></div>
+                    <div id="incorrect-storage" class="check" style="display: none; background-color: red;"></div>
                 </div>
             </div>
         </div>
         <div class="row">
             <!-- all components to drag -->
             <div id="components" class="column comprow">
-                <div id="cpu" class="funcomps" draggable="true">comp1</div>
-                <div id="ram" class="funcomps" draggable="true">comp2</div>
-                <div id="psu" class="funcomps" draggable="true">comp3</div>
-                <div id="storage" class="funcomps" draggable="true">comp4</div>
-                <div id="gpu" class="funcomps" draggable="true">comp5</div>
+                <div id="cpu" class="funcomps" draggable="true">cpu</div>
+                <div id="ram" class="funcomps" draggable="true">ram</div>
+                <div id="psu" class="funcomps" draggable="true">psu</div>
+                <div id="storage" class="funcomps" draggable="true">storage</div>
+                <div id="gpu" class="funcomps" draggable="true">gpu</div>
 
             </div>
         </div>
