@@ -68,6 +68,7 @@ h1
 
 .subbox
 {
+    display: flex;
     background-color: white;
     border-style: dashed;
     border-color: black;
@@ -83,7 +84,7 @@ h1
     background-repeat: no-repeat;
     background-origin: padding-box;
     height: 600px;
-    width: 600px;
+    width: 1000px;
     /* border-color: black;
     border-style: solid; */
     flex: none;
@@ -91,7 +92,7 @@ h1
 
 #components
 {
-    height: 250px;
+    height: 200px;
     /* padding: 40px; */
     border-color: black;
     border-style: solid;

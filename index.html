@@ -29,11 +29,12 @@
         <div class="row">
             <!-- all components to drag -->
             <div id="components" class="column comprow">
-                <div id="cpu" class="funcomps">comp1</div>
-                <div id="ram" class="funcomps">comp2</div>
-                <div id="psu" class="funcomps">comp3</div>
-                <div id="storage" class="funcomps">comp4</div>
-                <div id="gpu" class="funcomps">comp5</div>
+                <div id="cpu" class="funcomps" draggable="true">comp1</div>
+                <div id="ram" class="funcomps" draggable="true">comp2</div>
+                <div id="psu" class="funcomps" draggable="true">comp3</div>
+                <div id="storage" class="funcomps" draggable="true">comp4</div>
+                <div id="gpu" class="funcomps" draggable="true">comp5</div>
+
             </div>
         </div>
         <div class="row three">
@@ -41,7 +42,7 @@
             <input type="submit" value="Submit" class="column two">
             <!-- <div class="column"></div> -->
             <!-- refresh or shuffle -->
-            <button class="column two"><i class="fa-solid fa-arrows-rotate"></i></button>        
+            <button id="resetButton" class="column two"><i class="fa-solid fa-arrows-rotate"></i></button>
         </div>
     </div>
     <script src="assets/js/script.js"></script>
