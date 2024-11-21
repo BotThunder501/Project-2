@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const components = document.querySelectorAll('.funcomps');
+    const components = document.getElementsByClassName('funcomps');
     const resetButton = document.getElementById('resetButton');
-    const draggableItems = document.querySelectorAll('.funcomps');
-    const subboxes = document.querySelectorAll('.subbox');
+    const draggableItems = document.getElementsByClassName('funcomps');
+    const subboxes = document.getElementsByClassName('subbox');
 
     const originalPositions = Array.from(components).map(component => ({
         id: component.id,
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
 
     function resetComponents() {
-        originalPositions.forEach(pos => {
+        Array.from(originalPositions).forEach(pos => {
             const component = document.getElementById(pos.id);
             pos.parent.appendChild(component);
             const parentChildren = Array.from(pos.parent.children);
@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     resetButton.addEventListener('click', resetComponents);
 
-    draggableItems.forEach(item => {
+    Array.from(draggableItems).forEach(item => {
         item.addEventListener('dragstart', dragStart);
         item.addEventListener('dragend', dragEnd);
     });
 
-    subboxes.forEach(subbox => {
+    Array.from(subboxes).forEach(subbox => {
         subbox.addEventListener('dragover', dragOver);
         subbox.addEventListener('drop', drop);
     });
@@ -49,6 +49,29 @@ document.addEventListener('DOMContentLoaded', () => {
         const id = e.dataTransfer.getData('text/plain');
         const draggableElement = document.getElementById(id);
         const dropzone = e.target;
-        dropzone.appendChild(draggableElement);
+    
+        // Check if the dropzone is a valid subbox (not a funcomp)
+        if (dropzone.classList.contains('subbox')) {
+            // Check if the dropzone already has a child
+            if (dropzone.children.length === 0) {
+                dropzone.appendChild(draggableElement);
+            } else {
+                // If the dropzone is occupied, return the draggable element to its original position
+                const originalPosition = originalPositions.find(pos => pos.id === id);
+                if (originalPosition) {
+                    originalPosition.parent.appendChild(draggableElement);
+                    const parentChildren = Array.from(originalPosition.parent.children);
+                    originalPosition.parent.insertBefore(draggableElement, parentChildren[originalPosition.index]);
+                }
+            }
+        } else {
+            // If the dropzone is not a subbox, return the draggable element to its original position
+            const originalPosition = originalPositions.find(pos => pos.id === id);
+            if (originalPosition) {
+                originalPosition.parent.appendChild(draggableElement);
+                const parentChildren = Array.from(originalPosition.parent.children);
+                originalPosition.parent.insertBefore(draggableElement, parentChildren[originalPosition.index]);
+            }
+        }
     }
 });
