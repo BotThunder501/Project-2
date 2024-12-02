@@ -13,28 +13,28 @@
     <!-- Game Area -->
     <div class="flex-grid">
         <div class="row">
-            <div class="column border empty">
-                <div id="1" class="subbox">
+            <div class="column border">
+                <div id="one" class="subbox">
                     <div id="correct-cpu" class="check" style="display: none; background-color: green;"></div>
                     <div id="incorrect-cpu" class="check" style="display: none; background-color: red;"></div>
                 </div>
-                <div id="2" class="subbox">
+                <div id="two" class="subbox">
                     <div id="correct-gpu" class="check" style="display: none; background-color: green;"></div>
                     <div id="incorrect-gpu" class="check" style="display: none; background-color: red;"></div>
                 </div>
             </div>
             <!-- Main board area with boxes painting to motherboard parts -->
             <div id="motherboard" class="column"></div>
-            <div class="column border empty">
-                <div id="3" class="subbox">
+            <div class="column border">
+                <div id="three" class="subbox">
                     <div id="correct-ram" class="check" style="display: none; background-color: green;"></div>
                     <div id="incorrect-ram" class="check" style="display: none; background-color: red;"></div>
                 </div>
-                <div id="4" class="subbox">
+                <div id="four" class="subbox">
                     <div id="correct-psu" class="check" style="display: none; background-color: green;"></div>
                     <div id="incorrect-psu" class="check" style="display: none; background-color: red;"></div>
                 </div>
-                <div id="5" class="subbox">
+                <div id="five" class="subbox">
                     <div id="correct-storage" class="check" style="display: none; background-color: green;"></div>
                     <div id="incorrect-storage" class="check" style="display: none; background-color: red;"></div>
                 </div>
@@ -43,18 +43,17 @@
         <div class="row">
             <!-- all components to drag -->
             <div id="components" class="column comprow">
-                <div id="cpu" class="funcomps" draggable="true">cpu</div>
-                <div id="ram" class="funcomps" draggable="true">ram</div>
-                <div id="psu" class="funcomps" draggable="true">psu</div>
-                <div id="storage" class="funcomps" draggable="true">storage</div>
-                <div id="gpu" class="funcomps" draggable="true">gpu</div>
+                <div id="cpu" class="funcomps" draggable="true"></div>
+                <div id="ram" class="funcomps" draggable="true"></div>
+                <div id="psu" class="funcomps" draggable="true"></div>
+                <div id="storage" class="funcomps" draggable="true"></div>
+                <div id="gpu" class="funcomps" draggable="true"></div>
 
             </div>
         </div>
         <div class="row three">
             <!-- submit answer -->
             <input type="submit" value="Submit" class="column two">
-            <!-- <div class="column"></div> -->
             <!-- refresh or shuffle -->
             <button id="resetButton" class="column two"><i class="fa-solid fa-arrows-rotate"></i></button>
         </div>

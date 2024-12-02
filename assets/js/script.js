@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
 
     const correctPlacements = {
-        cpu: "1", // CPU should be in subbox with id "1"
-        ram: "3", // RAM should be in subbox with id "2"
-        psu: "4", // PSU should be in subbox with id "3"
-        storage: "5", // Storage should be in subbox with id "4"
-        gpu: "2" // GPU should be in subbox with id "5"
+        cpu: "one", // CPU should be in subbox with id "1"
+        ram: "three", // RAM should be in subbox with id "2"
+        psu: "four", // PSU should be in subbox with id "3"
+        storage: "five", // Storage should be in subbox with id "4"
+        gpu: "two" // GPU should be in subbox with id "5"
     };
 
     function resetComponents() {
