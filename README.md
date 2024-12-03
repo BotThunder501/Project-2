@@ -74,11 +74,24 @@ The page consists of boxes that can be dragged and dropped into specifics boxes 
 
 - Lighthouse
   - Overall performance of website is good
+  ![Lighthouse](assets/images/lighthouse.png)
 
 ## Deployment
+
+- GitHub pages was used to deploy the website, instructions to deploy are as follows:
+  - In the GitHub repository, navigate to the settings tab
+  - On the left hand side, under code and automation, click on pages
+  - Source is set to "Deploy from a branch", branch should be set to "main", then press save
+  - After saved, go back to the main page and refresh after some time on the right hand side a successfull deployment will show
+
+The link for the deployed website can be found here - [Building The PC](https://botthunder501.github.io/Project-2/)
 
 ## Credits
 
 ### Content
 
+- The icons used in footer and content boxes were taken from [Font Awesome](https://fontawesome.com)
+
 ### Media
+
+- The images of components and motherboard were drawn by me
