@@ -16,6 +16,11 @@ h1 {
     text-align: center;
 }
 
+p
+{
+    text-align: center;
+}
+
 /* main flexbox */
 .flex-grid {
     padding: 50px;
