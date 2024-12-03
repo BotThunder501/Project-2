@@ -56,9 +56,9 @@ The page consists of boxes that can be dragged and dropped into specifics boxes 
 - Clicking on the image will open in a new tab of the image but bigger.
 
 ## Testing
-
+<!-- Add testing stuff -->
 ### User Story
-
+<!-- Add user story -->
 ### Validator Testing
 
 - HTML
