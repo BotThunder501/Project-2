@@ -54,6 +54,8 @@ The page consists of boxes that can be dragged and dropped into specifics boxes 
 - Add accessibility options, change colours and text.
 - Add an alert box to display if got all correct answers or some correct/incorrect.
 - Clicking on the image will open in a new tab of the image but bigger.
+- when hovering over images, a box will appear with the name of the component.
+- Add more description on the page about the components and the motherboard and how to play the game.
 
 ## Testing
 <!-- Add testing stuff -->
