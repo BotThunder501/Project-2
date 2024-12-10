@@ -7,7 +7,7 @@
   - [Existing Features](#existing-features)
   - [Features Left to Implement](#features-left-to-implement)
 - [Testing](#testing)
-  - [User Story](#user-story)
+  - [User Stories](#user-stories)
   - [Validator Testing](#validator-testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -58,9 +58,27 @@ The page consists of boxes that can be dragged and dropped into specifics boxes 
 - Add more description on the page about the components and the motherboard and how to play the game.
 
 ## Testing
-<!-- Add testing stuff -->
-### User Story
-<!-- Add user story -->
+
+The Testing that was conducted for the page was to check that each PC component can be clicked, dragged and moved. After being dragged it should be able to drop into a submission box. Clicking on the submit button will give the user feedback. After submitting their answers visual feedback of either correct or incorrect will be displayed. Pressing the reset button should turn of the visual feedback and replace the PC components back to their original positions.
+
+Each user was tested on how they understood the purpose of the page. Asked them if they knew how to drag the components, how to submit their answers and how to reset their answers.
+
+There will be future testing done to see how the page works on different devices. Accessibility testing will also be done to ensure that the page is accessible to all users.
+
+### User Stories
+
+<u>User Story 1</u>
+
+- As an **Beginner PC Builder**
+- I want to **learn what each components** are before buying.
+- So that I can **build my own PC**.
+
+<u>User Story 2</u>
+
+- As a **Teacher**
+- I want to **show students** what each components are.
+- So that I can **teach them how a PC works**.
+
 ### Validator Testing
 
 - HTML
