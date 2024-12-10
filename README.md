@@ -67,13 +67,13 @@ There will be future testing done to see how the page works on different devices
 
 ### User Stories
 
-<u>User Story 1</u>
+#### User Story 1
 
 - As an **Beginner PC Builder**
 - I want to **learn what each components** are before buying.
 - So that I can **build my own PC**.
 
-<u>User Story 2</u>
+#### User Story 2
 
 - As a **Teacher**
 - I want to **show students** what each components are.
